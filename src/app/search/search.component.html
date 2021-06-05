@@ -1,0 +1,31 @@
+<img src="https://media2.giphy.com/media/jUaEAqym0ImpW/200.gif" style="margin-left: 495px;margin-top: 50px;border: 5px solid #555;">
+<div>
+  <input [(ngModel)]="searchInput" type="text" placeholder="Search for a Track!" style="margin-left: 550px;">
+</div>
+<div>
+  <button id=search (click)="onGetTracksClick()" style="margin-left: 580px;">Search!</button>
+</div>
+
+<alert></alert>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Artist</th>
+      <th>Image</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let music of tracks; let i = index;">
+      <tr>
+        <td>{{ music.music_name }}</td>
+        <td>{{ music.music_artist }}</td>
+        <td><img [src]="music.music_pic" [alt]="music.music_name" style="width:150px;height:150px;text-align:center;"></td>
+        <td>
+          <button mat-button style="font-family: 'Bungee';font-size: 16px;" (click)="onAddTrackClick(music)"><mat-icon>add</mat-icon> My Bucket</button>
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

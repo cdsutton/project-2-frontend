@@ -1,0 +1,31 @@
+h1 {
+  font-family: 'Bungee Shade';
+  font-size: 22px;
+  text-align: center;
+}
+
+table {
+  font-family: 'Bungee';
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+  }
+  
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  } */

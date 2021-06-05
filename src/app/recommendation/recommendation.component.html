@@ -1,0 +1,25 @@
+<h1>Catch of the Day!</h1>
+
+<alert></alert>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Artist</th>
+      <th>Image</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let music of tracks; let i = index;">
+      <tr>
+        <td>{{ music.music_name }}</td>
+        <td>{{ music.music_artist }}</td>
+        <td><img [src]="music.music_pic" [alt]="music.music_name" style="width:150px;height:150px;text-align:center;"></td>
+        <td>
+          <button mat-button style="font-family: 'Bungee';font-size: 16px;" (click)="onAddTrackClick(music)"><mat-icon>add</mat-icon> My Bucket</button>
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

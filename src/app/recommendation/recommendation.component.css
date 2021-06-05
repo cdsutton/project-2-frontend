@@ -1,0 +1,27 @@
+h1 {
+    font-family: 'Bungee Shade';
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  table {
+    font-family: 'Bungee';
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+    
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+
+  alert {
+    font-family: 'Bungee';
+    font-size: 15px;
+  }
